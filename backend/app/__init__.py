@@ -24,7 +24,7 @@ def create_app():
     os.makedirs(app.config['UPLOAD_FOLDER'], exist_ok=True)
 
     # Initialize extensions
-    CORS(app, origins=['http://localhost:3000', 'http://frontend:3000'])
+    CORS(app, origins=['https://analyserx.vercel.app'])
     db.init_app(app)
     jwt.init_app(app)
 
